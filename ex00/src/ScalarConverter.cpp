@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 18:46:14 by sadoming          #+#    #+#             */
-/*   Updated: 2025/04/22 18:09:48 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/04/22 20:01:56 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ void	ScalarConverter::convert(const std::string &input)
 	// Check type of input
 	int	type = getType(input);
 	int	intValue = 0;
+	float	floatValue = 0.0f;
+	double	doubleValue = 0.0;
 
 	switch (type)
 	{
@@ -68,11 +70,28 @@ void	ScalarConverter::convert(const std::string &input)
 
 		case TYPE_INT:
 			intValue = ft_atoi(input);
-
 			displayChar(intValue);
 			std::cout << "int:  \t\t|" << intValue << std::endl;
 			std::cout << "float: \t\t|" << static_cast<float>(intValue) << "f" << std::endl;
 			std::cout << "double: \t|" << static_cast<double>(intValue) << std::endl;
+			break;
+
+		case TYPE_FLOAT:
+			floatValue = std::strtof(input.c_str(), NULL); // Convert string to float
+			intValue = static_cast<int>(floatValue);
+			displayChar(intValue);
+			std::cout << "int:  \t\t|" << intValue << std::endl;
+			std::cout << "float: \t\t|" << floatValue << "f" << std::endl;
+			std::cout << "double: \t|" << static_cast<double>(floatValue) << std::endl;
+			break;
+
+		case TYPE_DOUBLE:
+			doubleValue = std::strtod(input.c_str(), NULL); // Convert string to double
+			intValue = static_cast<int>(doubleValue);
+			displayChar(intValue);
+			std::cout << "int:  \t\t|" << intValue << std::endl;
+			std::cout << "float: \t\t|" << static_cast<float>(doubleValue) << "f" << std::endl;
+			std::cout << "double: \t|" << doubleValue << std::endl;
 			break;
 
 		default:

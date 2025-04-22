@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 18:46:23 by sadoming          #+#    #+#             */
-/*   Updated: 2025/04/22 18:05:00 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/04/22 18:55:41 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include <cstdlib>
 
 # define TYPE_CHAR		0
 # define TYPE_INT		1
