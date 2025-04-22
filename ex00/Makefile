@@ -6,7 +6,7 @@
 #    By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 17:01:41 by sadoming          #+#    #+#              #
-#    Updated: 2025/03/12 18:58:41 by sadoming         ###   ########.fr        #
+#    Updated: 2025/04/22 17:40:36 by sadoming         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ OBJ_DIR		:=	./obj
 MAK	:= Makefile
 HDR	:= $(INC_DIR)/ # Headers
 
-SRC_SRC := main.cpp ScalarConversion.cpp
+SRC_SRC := main.cpp ScalarConverter.cpp
 
 SRC := $(addprefix $(SRC_DIR), $(SRC_SRC))
 
