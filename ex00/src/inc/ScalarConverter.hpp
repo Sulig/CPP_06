@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 18:46:23 by sadoming          #+#    #+#             */
-/*   Updated: 2025/04/22 18:55:41 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:46:48 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define SCALARCONVERTER_HPP
 
 # include <iostream>
+# include <iomanip>
 # include <string>
 # include <cstdlib>
 
@@ -21,7 +22,8 @@
 # define TYPE_INT		1
 # define TYPE_FLOAT		2
 # define TYPE_DOUBLE	3
-# define TYPE_STRING	4
+# define TYPE_PSEUDO_F	4
+# define TYPE_PSEUDO_D	5
 # define TYPE_UNKNOWN	-1
 
 class	ScalarConverter
@@ -38,8 +40,9 @@ class	ScalarConverter
 		virtual void	doNotInstantiate() const = 0;
 
 		// Utilities
-		static int	getType(const std::string &input);
 		static void	displayChar(const int value);
+		static int	getType(const std::string &input);
+		static int	setPrecision(const std::string &input);
 		static int	ft_atoi(const std::string str);
 
 };
