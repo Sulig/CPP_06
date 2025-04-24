@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 18:46:23 by sadoming          #+#    #+#             */
-/*   Updated: 2025/04/24 17:46:48 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/04/24 18:56:09 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 class	ScalarConverter
 {
 	public:
-		static void	convert(const std::string &input);
+		static void	serialize(const std::string &input);
 
 	private:
 		ScalarConverter();

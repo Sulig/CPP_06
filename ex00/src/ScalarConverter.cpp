@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 18:46:14 by sadoming          #+#    #+#             */
-/*   Updated: 2025/04/24 17:50:31 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/04/24 18:56:06 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int		ScalarConverter::getType(const std::string &input)
 }
 
 /*---------------------------------------*/
-void	ScalarConverter::convert(const std::string &input)
+void	ScalarConverter::serialize(const std::string &input)
 {
 	// Check type of input
 	int	type = getType(input);
